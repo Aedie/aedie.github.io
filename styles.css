@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis|Lora|Lato|Kaushan+Script");
 
 body {
-  background-color: white;
-  padding: 0;
-  border-width: 0;
-  margin: 0px;
+background-color: #EEE;
+padding: 0;
+border-width: 0;
+margin: 0px;
+width: 100%;
+max-width: 100VW;
 }
 
 .headline {
-  font-family: kaushan script;
-  font-weight: 400;
-  line-height: 60%;
-  font-size: 3.5vw;
-  border-width: 0px;
+    font-family: kaushan script;
+    font-weight: 400;
+    line-height: 60%;
+    font-size: 3.5vw;
+    border-width: 0px;
 }
 
 .headline-lightbg {
@@ -24,25 +26,20 @@ body {
 }
 
 .header {
-  padding-top: 24%;
-  padding-bottom: 0px;
-  padding-left: 15%;
-  padding-right: 0px;
-  border-width: 0px;
-  background-image: url("img/bghero.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 2;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  max-width: 100%;
-}
-
-.navbar {
-  position: absolute;
-  z-index: 5;
-  color: white;
+    padding-top: 24%;
+    padding-bottom: 0px;
+    padding-left: 15%;
+    padding-right: 0px;
+    border-width: 0px;
+    background-image: url("img/bghero.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 85%;
+    margin: 0px;
 }
 
 .paragraph {
@@ -54,15 +51,20 @@ body {
 }
 
 .projects {
-  position: relative;
-  background-color: #eeeeee;
-  max-width: 100%;
-  padding-right: 0px;
-  padding-top: 56px;
-  border-width: 0px;
-  top: -16vw;
+    position: relative;
+    background-color: white;
+    width: 85%;
+    padding-left: 15%;
+    padding-right: 0px;
+    padding-top: 64px;
+    border-width: 0px;
+    top: 48vw;
 }
 
-.content {
-  padding-left: 15%;
+.tile {
+    position: inherit;
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+
 }
