@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Lora|Lato|Kaushan+Script');
+@import url("https://fonts.googleapis.com/css?family=Dosis|Lora|Lato|Kaushan+Script");
 
 body {
 background-color: #EEE;
@@ -18,11 +18,11 @@ max-width: 100VW;
 }
 
 .headline-lightbg {
-    color: #43226c;
+  color: #43226c;
 }
 
 .headline-darkbg {
-    color: white;
+  color: white;
 }
 
 .header {
@@ -43,11 +43,11 @@ max-width: 100VW;
 }
 
 .paragraph {
-    color: white;
-    font-family: lato;
-    font-weight: 400;
-    line-height: 150%;
-    font-size: 1.2vmax;
+  color: white;
+  font-family: lato;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 1.2vmax;
 }
 
 .projects {
