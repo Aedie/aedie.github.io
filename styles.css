@@ -98,11 +98,12 @@ body {
   top: 48vw;
 }
 
-.tile {
-  position: inherit;
-  background-color: white;
-  width: 20%;
-  padding: 10px;
+.sub-heading {
+  color: #444;
+  font-family: lato;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 1.5vmax;
 }
 
 .contact-details {
@@ -123,13 +124,7 @@ body {
   display: inline;
   z-index: 10;
 }
-.sub-heading {
-  color: #444;
-  font-family: lato;
-  font-weight: 500;
-  line-height: 150%;
-  font-size: 1.5vmax;
-}
+
 .contact-details a {
   color: white;
   list-style-type: none;
