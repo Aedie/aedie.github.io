@@ -96,3 +96,34 @@ body {
   top: 48vw;
 }
 
+.tile {
+  position: inherit;
+  background-color: white;
+  width: 20%;
+  padding: 10px;
+}
+
+.contact-details {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  /* background-color: black; */
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: right;
+  float: right;
+  top: 0px;
+  text-decoration: none;
+  /* font-family: kaushan script; */
+  font-weight: 400;
+  line-height: 60%;
+  font-size: 50;
+  display: inline;
+  z-index: 10;
+}
+
+.contact-details a {
+  color: white;
+  list-style-type: none;
+  text-align: right;
+}
