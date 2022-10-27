@@ -8,6 +8,35 @@ body {
   width: 100%;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px 1fr;
+  column-gap: 20px;
+}
+
+.tile {
+  background-color: #000;
+  grid-column: 1;
+  grid-row: 2;
+  padding: 20px;
+  text-align: center;
+}
+
+.tile2 {
+  background-color: #fff;
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+}
+
+.tile3 {
+  background-color: #fff;
+  grid-column: 3;
+  grid-row: 2;
+  padding: 20px;
+}
+
 .headline {
   font-family: kaushan script;
   font-weight: 400;
@@ -18,6 +47,7 @@ body {
 
 .headline-lightbg {
   color: #43226c;
+  font-size: 2.5vw;
 }
 
 .headline-darkbg {
@@ -26,7 +56,7 @@ body {
 
 .header {
   padding-top: 24%;
-  padding-bottom: 0px;
+  padding-bottom: 60%;
   padding-left: 15%;
   padding-right: 0px;
   border-width: 0px;
@@ -58,17 +88,11 @@ body {
 .projects {
   position: relative;
   background-color: white;
-  width: 85%;
-  padding-left: 15%;
-  padding-right: 0px;
-  padding-top: 64px;
+  width: 76%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 100px;
   border-width: 0px;
   top: 48vw;
 }
 
-.tile {
-  position: inherit;
-  background-color: white;
-  width: 20%;
-  padding: 10px;
-}
