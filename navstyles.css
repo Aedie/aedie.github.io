@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis|Lora|Lato|Kaushan+Script");
 
-li {
+.navbar li {
   /* font-family: kaushan script; */
   font-weight: 400;
   line-height: 60%;
