@@ -1,18 +1,33 @@
-@import url("https://fonts.googleapis.com/css?family=Dosis|Lora|Lato|Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Lato|Kaushan+Script");
 
 body {
-  background-color: #eee;
+  background-color: #fff;
   padding: 0;
   border-width: 0;
   margin: 0px;
   width: 100%;
 }
 
+.header {
+  padding-top: 24%;
+  padding-bottom: 22%;
+  padding-left: 15%;
+  padding-right: 0px;
+  border-width: 0px;
+  background-image: url("img/bghero.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+  width: 85%;
+  margin: 0px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20px 1fr;
-  column-gap: 20px;
+  column-gap: 3vw;
 }
 
 .tile {
@@ -48,29 +63,12 @@ body {
 }
 
 .headline-lightbg {
-  color: #43226c;
+  color: #381d61;
   font-size: 2.5vw;
 }
 
 .headline-darkbg {
   color: white;
-}
-
-.header {
-  padding-top: 24%;
-  padding-bottom: 22%;
-  padding-left: 15%;
-  padding-right: 0px;
-  border-width: 0px;
-  background-image: url("img/bghero.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 2;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 85%;
-  margin: 0px;
 }
 
 .navbar {
@@ -88,16 +86,14 @@ body {
 }
 
 .projects {
-  position: relative;
   background-color: white;
-  width: 76%;
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 100px;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 30px;
   border-width: 0px;
-  top: 48vw;
 }
-
 
 .sub-heading {
   color: #444;
@@ -111,14 +107,12 @@ body {
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 1%;
-  /* background-color: black; */
   position: -webkit-sticky;
   position: sticky;
   text-align: right;
   float: right;
   top: 0px;
   text-decoration: none;
-  /* font-family: kaushan script; */
   font-weight: 400;
   line-height: 60%;
   font-size: 50;
@@ -130,4 +124,16 @@ body {
   color: white;
   list-style-type: none;
   text-align: right;
+}
+
+.footer {
+  color: white;
+  font-family: lato;
+  text-align: center;
+  width: 80%;
+  background-color: #381d61;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
