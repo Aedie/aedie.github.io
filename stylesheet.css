@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Kaushan+Script");
+
+* {
+    box-sizing: border-box;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', sans-serif;
+    color: #381d61;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .5rem 1rem;
+
+    color: white;
+}
+
+header.active {
+    color: black;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+header .social {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header .social img {
+    width: 3rem;
+    height: 3rem;
+}
+
+section#headline {
+    height: 100vh;
+    background-image: url('./img/bghero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: white;
+    padding-top: 4rem;
+}
+
+section#projects h2 {
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0rem auto;
+    padding: 0 2rem;
+}
+
