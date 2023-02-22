@@ -95,6 +95,10 @@ section#hero h1 {
     color: inherit;
 }
 
+section#hero p {
+    max-width: 25rem;
+}
+
 section#hero .container {
     min-height: 70vh;
     display: flex;
