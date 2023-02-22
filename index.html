@@ -47,6 +47,10 @@
 
     <nav>
 
+      <button type="button" class="hamburger" data-toggle="hamburger">
+        <img src="/img/hamburger.svg" />
+      </button>
+
       <ul class="navbar">
         <li>
           <a href="#" target="_top">Home</a>
@@ -142,6 +146,34 @@
           }
       });
     });
+
+    const headerNavigation = document.querySelector('header nav ul')
+    const headerNavigationImage = document.querySelector('header nav .hamburger img')
+  
+    const navigation = {
+      open: function() {
+        headerNavigation.classList = "navbar active"
+        headerNavigationImage.src = "/img/cross.svg"
+      },
+      close: function() {
+        headerNavigation.classList = "navbar"
+        headerNavigationImage.src = "/img/hamburger.svg"
+      }
+    }
+
+    document.querySelector('[data-toggle="hamburger"]').addEventListener('click', function () {
+      console.log(headerNavigation.classList)
+      if (!headerNavigation.classList.contains('active'))
+        navigation.open()
+      else
+        navigation.close()
+    })
+
+    document.querySelectorAll('header nav ul li').forEach(function(link) {
+      link.addEventListener('click', function () {
+        navigation.close()
+      })
+    })
   </script>
 
 </body>
