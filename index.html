@@ -1,56 +1,148 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <iframe
-      class="navbar"
-      src="nav.html"
-      frameborder="0"
-      scrolling="no"
-      tabindex="1"
-      width="100%"
-    ></iframe>
-    <div class="contact-details">
-      <a href="mailto:kitty.lee.1713@gmail.com"
-        ><img src="img/mail.png" width="44" height="44"
-      /></a>
-      <a href="https://www.linkedin.com/in/kittysdesign/" target="_blank"
-        ><img src="img/linkedin.png" width="44" height="44"
-      /></a>
+<html lang="en">
+<head>
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta content="UX & UI Designer" name="title">
+  <meta content="en" name="language">
+  <link rel="canonical" href="https://aedie.github.io">
+  <meta name="theme-color" content="#381d61">
+
+  <!-- SEO -->
+  <title>Kitty Lee &middot; UX & UI Designer</title>
+  <meta
+    content="I'm an user experience and interface designer driven by the need to understand. Understand people, understand problems, and answer that pesky question: but why"
+    name="description">
+  <meta content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" name="robots">
+  <meta content="Kitty, Lee, Kitty Lee, UI, UX, Designer, UI Designer, UX Designer" name="keywords">
+
+  <!-- discord, twitter, facebook, etc. -->
+  <meta content="en_US" property="og:locale">
+  <meta content="website" property="og:type">
+  <meta content="UX & UI Designer" property="og:title">
+  <meta
+    content="I'm an user experience and interface designer driven by the need to understand. Understand people, understand problems, and answer that pesky question: but why"
+    name="og:description">
+  <meta content="Kitty Lee" property="og:site_name">
+  <meta content="https://aedie.github.io/thumbnail.jpg" property="og:image">
+  <meta content="https://aedie.github.io/thumbnail.jpg" property="og:image:secure_url">
+  <meta content="1024" property="og:image:width">
+  <meta content="445" property="og:image:height">
+
+  <!-- icons -->
+  <link href="https://aedie.github.io/" rel="shortlink">
+  <link href="https://aedie.github.io/img/favicon-32.png" rel="icon" sizes="32x32">
+  <link href="https://aedie.github.io/img/favicon-192.png" rel="icon" sizes="192x192">
+  <link href="https://aedie.github.io/img/favicon-180.png" rel="apple-touch-icon-precomposed">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+
+  <header>
+
+    <nav>
+
+      <ul class="navbar">
+        <li>
+          <a href="#" target="_top">Home</a>
+        </li>
+        <li>
+          <a href="#hero">About me</a>
+        </li>
+        <li>
+          <a href="#projects">My work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact me</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div class="social">
+      <a href="mailto:kitty.lee.1713@gmail.com">
+        <img src="img/email.svg" />
+      </a>
+      <a href="https://www.linkedin.com/in/kittysdesign/" target="_blank">
+        <img src="img/linkedin.svg" />
+      </a>
     </div>
 
-    <div class="header">
-      <h1 class="headline headline-darkbg">Hi, I'm Kitty</h1>
-      <h2 class="paragraph">
-        I'm an user experience and interface designer driven <br />
-        by the need to understand. Understand people, understand <br />
+  </header>
+
+  <section id="hero">
+    
+    <div class="container">
+
+      <h1>Hi, I'm Kitty</h1>
+      
+      <p>
+        I'm an user experience and interface designer driven
+        by the need to understand. Understand people, understand
         problems, and answer that pesky question: "but <i>why</i>?"
-      </h2>
+      </p>
+
     </div>
 
-    <div class="projects">
-      <h1 class="headline headline-lightbg"> - Recent Projects - </h1>
-      <div class="container">
-        <div class="tile">
-         <img src="img/competible.png" width="100%"> <br />
-         <h2 class="sub-heading"> COM-PET-IBLE</h2>
+  </section>
+
+  <section id="projects">
+    
+    <div class="container">
+
+      <h2> - Recent Projects - </h2>
+
+      <div class="grid">
+
+        <div class="grid--item">
+          <img src="img/image1.jpg">
+          <h2 class="sub-heading">COM-PET-IBLE</h2>
         </div>
-        <div class="tile2">
-          <img src="img/competible.png" width="100%"> <br />
-          <h2 class="sub-heading"> SYMBIO INTRANET <br /> RE-DESIGN </h2>
+
+        <div class="grid--item">
+          <img src="img/image2.jpg">
+          <h2 class="sub-heading">SYMBIO INTRANET <br /> RE-DESIGN </h2>
         </div>
-        <div class="tile3">
-          <img src="img/competible.png" width="100%"> <br />
-          <h2 class="sub-heading"> FORA'S NEW GRADUATE PROGRAM </h2>
+
+        <div class="grid--item">
+          <img src="img/image3.jpg">
+          <h2 class="sub-heading">FORA'S NEW GRADUATE PROGRAM </h2>
         </div>
+
       </div>
+
     </div>
 
-  <div class="footer">
-    copyright and stuff
-  </div>
+  </section>
 
-  </body>
+  <section>
+
+
+
+  </section>
+  
+  <footer class="footer">
+    &copy; 2023 Kitty Lee
+  </footer>
+
+  <script type="text/javascript">
+    window.addEventListener('load', function () {
+      window.addEventListener('scroll', function() {
+          let scroll_pos = window.pageYOffset;
+          const scrollOffset = (document.querySelector('#hero').clientHeight * .80)
+          if ( scroll_pos > scrollOffset ) {
+            document.querySelector('header').className = "active"
+          } else {
+            document.querySelector('header').className = ""
+          }
+      });
+    });
+  </script>
+
+</body>
 </html>

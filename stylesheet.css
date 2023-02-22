@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Kaushan+Script");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #381d61;
+    --secondary: #444444;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--secondary);
+    font-weight: normal;
+}
+
+h1 {
+    color: var(--primary);
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 3rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .5rem 1rem;
+
+    color: white;
+
+    transition: .25s ease;
+}
+
+header.active {
+    background: var(--primary);
+    transition: .25s ease;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+header .social {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header .social img {
+    width: 3rem;
+    height: 3rem;
+    transition: .25s ease;
+}
+
+header .social img:hover {
+    transform: scale(1.1);
+    transition: .25s ease;
+}
+
+section#hero {
+    height: 100vh;
+    background-image: url('./img/bghero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: white;
+    padding-top: 4rem;
+}
+
+section#hero h1 {
+    color: inherit;
+}
+
+section#hero p {
+    max-width: 25rem;
+}
+
+section#hero .container {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#projects h2 {
+    margin-bottom: 2rem;
+    display: block;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.grid--item {
+    text-align: center;
+}
+
+.grid--item img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.grid--item h2 {
+    margin-top: 1rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0rem auto;
+    padding: 0 2rem;
+}
+
