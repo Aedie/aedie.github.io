@@ -73,6 +73,12 @@ header .social {
 header .social img {
     width: 3rem;
     height: 3rem;
+    transition: .25s ease;
+}
+
+header .social img:hover {
+    transform: scale(1.1);
+    transition: .25s ease;
 }
 
 section#hero {
