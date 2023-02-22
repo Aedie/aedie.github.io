@@ -118,8 +118,13 @@ footer {
     text-align: center;
 }
 
+.grid--item img {
+    width: 100%;
+    border-radius: 100%;
+}
+
 .grid--item h2 {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .container {
