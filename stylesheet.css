@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #381d61;
+    --secondary: #444444;
+}
+
 body,html {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
+    color: var(--secondary);
+    font-weight: normal;
+}
+
+h1 {
+    color: var(--primary);
     font-family: 'Kaushan Script', sans-serif;
-    color: #381d61;
+    font-size: 3rem;
 }
 
 a {
@@ -34,10 +46,13 @@ header {
     padding: .5rem 1rem;
 
     color: white;
+
+    transition: .25s ease;
 }
 
 header.active {
-    color: black;
+    background: var(--primary);
+    transition: .25s ease;
 }
 
 header nav ul {
@@ -60,7 +75,7 @@ header .social img {
     height: 3rem;
 }
 
-section#headline {
+section#hero {
     height: 100vh;
     background-image: url('./img/bghero.png');
     background-size: cover;
@@ -70,15 +85,41 @@ section#headline {
     padding-top: 4rem;
 }
 
+section#hero h1 {
+    color: inherit;
+}
+
+section#hero .container {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 section#projects h2 {
     margin-bottom: 2rem;
     display: block;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+}
+
+.grid--item {
+    text-align: center;
+}
+
+.grid--item h2 {
+    margin-top: 2rem;
 }
 
 .container {

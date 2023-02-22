@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Kitty Lee &middot; UX & UI Designer</title>
   <link rel="stylesheet" href="/stylesheet.css">
 </head>
 <body>
@@ -14,10 +14,18 @@
     <nav>
 
       <ul class="navbar">
-        <li><a href="#" target="_top">home</a></li>
-        <li><a href="#about-me" target="_top">about me</a></li>
-        <li><a href="#work" target="_top">my work</a></li>
-        <li><a href="#contact" target="_top">contact me</a></li>
+        <li>
+          <a href="#" target="_top">Home</a>
+        </li>
+        <li>
+          <a href="#hero">About me</a>
+        </li>
+        <li>
+          <a href="#projects">My work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact me</a>
+        </li>
       </ul>
 
     </nav>
@@ -33,15 +41,19 @@
 
   </header>
 
-  <section id="headline">
+  <section id="hero">
     
-    <h1>Hi, I'm Kitty</h1>
+    <div class="container">
 
-    <p>
-      I'm an user experience and interface designer driven <br />
-      by the need to understand. Understand people, understand <br />
-      problems, and answer that pesky question: "but <i>why</i>?"
-    </p>
+      <h1>Hi, I'm Kitty</h1>
+      
+      <p>
+        I'm an user experience and interface designer driven <br />
+        by the need to understand. Understand people, understand <br />
+        problems, and answer that pesky question: "but <i>why</i>?"
+      </p>
+
+    </div>
 
   </section>
 
@@ -53,17 +65,17 @@
 
       <div class="grid">
 
-        <div>
+        <div class="grid--item">
           <img src="img/competible.png" width="100%"> <br />
           <h2 class="sub-heading"> COM-PET-IBLE</h2>
         </div>
 
-        <div>
+        <div class="grid--item">
           <img src="img/competible.png" width="100%"> <br />
           <h2 class="sub-heading"> SYMBIO INTRANET <br /> RE-DESIGN </h2>
         </div>
 
-        <div>
+        <div class="grid--item">
           <img src="img/competible.png" width="100%"> <br />
           <h2 class="sub-heading"> FORA'S NEW GRADUATE PROGRAM </h2>
         </div>
@@ -73,20 +85,26 @@
     </div>
 
   </section>
+
+  <section>
+
+    
+
+  </section>
   
   <footer class="footer">
-    copyright and stuff
+    &copy; 2023 Kitty Lee
   </footer>
 
   <script type="text/javascript">
     window.addEventListener('load', function () {
       window.addEventListener('scroll', function() {
           let scroll_pos = window.pageYOffset;
-          const scrollOffset = document.querySelector('#headline').clientHeightz
+          const scrollOffset = (document.querySelector('#hero').clientHeight * .80)
           if ( scroll_pos > scrollOffset ) {
-              document.querySelector('header').className = "active"
+            document.querySelector('header').className = "active"
           } else {
-              document.querySelector('header').className = ""
+            document.querySelector('header').className = ""
           }
       });
     });
