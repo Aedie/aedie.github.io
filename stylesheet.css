@@ -86,7 +86,7 @@ section#hero {
     background-image: url('./img/bghero.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: right bottom;
     color: white;
     padding-top: 4rem;
 }
